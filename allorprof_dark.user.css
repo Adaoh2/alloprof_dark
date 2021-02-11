@@ -1,0 +1,86 @@
+/* ==UserStyle==
+@name           Alloprof Dark
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Un thème sombre pour le site AlloProf!
+@author         Adaoh
+==/UserStyle== */
+@-moz-document domain("alloprof.qc.ca") {
+
+    /* ---------- Drawer Menu -----------*/
+    .nav-overlay--open .nav__content {
+        background-color: #141414;
+    }
+    .link:not(.link--sm):not(.link--small) .link__text {
+        color: #cacaca;
+    }
+    .icon-close:before {
+        color: #f00;
+    }
+    .icon-home-full:before,
+    .icon-home:before {
+        color: #cacaca;
+    }
+    .section[data-is-wrapping=main-menu] {
+        background-color: #141414;
+    }
+    .icon-social-facebook:before,
+    .icon-social-instagram:before,
+    .icon-social-linkedin:before,
+    .icon-social-mail:before,
+    .icon-social-pinterest:before,
+    .icon-social-twitter:before,
+    .icon-social-website:before,
+    .icon-social-youtube:before {
+        color: #cacaca;
+    }
+    .link,
+    a {
+        color: #5eb1ff;
+    }
+
+    /*------------------- Main Body ------------------*/
+    .layout__main {
+        background-color: #141414;
+    }
+    .tile-module:not([data-tile-type=exercise]):not([data-tile-type=tips_and_tools]) .tile__inner,
+    .tile-module[data-tile-featured=true][data-tile-format=large]:not([data-tile-type=exercise]):not([data-tile-type=tips_and_tools]):not([data-tile-type=download]) .tile__inner {
+        background-color: #232323;
+    }
+    .tile-module:not([data-tile-type=parentDirectory]):not([data-tile-type=parentChronicle]):not([data-tile-type=parentArticle]):not([data-tile-type=tips_and_tools]):not([data-tile-type=download]) .tile__type {
+        color: #a7ff38;
+    }
+    .tile-module .tile__author-name, .tile-module .tile__level-label, .tile-module .tile__level-years, .tile-module .tile__thematic, .tile-module .tile__title, .tile-module .tile__topic {
+    color: #fff;
+}
+    .btn--full {
+    color: #cacaca;
+}
+
+    /* --- Search Bar --- */
+    .title--h1alt {
+        color: #fff;
+    }
+    .search__box {
+        background-color: #232323;
+        border-radius: 10px;
+    }
+    .search__filters-heading {
+        color: #cacaca;
+    }
+    .search-btn__icon {
+        --stroke-color: #cacaca;
+    }
+    .filter__icon__line {
+        color: #cacaca;
+    }
+    .search__input {
+        background-color: #323232;
+        border: solid 1px;
+        border-color: #000;
+        border-radius: 5px;
+    }
+    .search__input::placeholder {
+        color: #6f6f6f;
+    }
+}
