@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Alloprof Dark
-@namespace      github.com/openstyles/stylus
-@version        1.0.0
+@namespace      https://github.com/Adaoh2/alloprof_dark
+@version        1.0.1
 @description    Un thème sombre pour le site AlloProf!
 @author         Adaoh
 ==/UserStyle== */
@@ -50,12 +50,31 @@
     .tile-module:not([data-tile-type=parentDirectory]):not([data-tile-type=parentChronicle]):not([data-tile-type=parentArticle]):not([data-tile-type=tips_and_tools]):not([data-tile-type=download]) .tile__type {
         color: #a7ff38;
     }
-    .tile-module .tile__author-name, .tile-module .tile__level-label, .tile-module .tile__level-years, .tile-module .tile__thematic, .tile-module .tile__title, .tile-module .tile__topic {
-    color: #fff;
-}
+    .tile-module:not([data-tile-type=parentDirectory]):not([data-tile-type=parentChronicle]):not([data-tile-type=parentArticle]):not([data-tile-type=tips_and_tools]):not([data-tile-type=download]):hover .tile__type {
+        color: #000;
+    }
+    .tile-module .tile__author-name,
+    .tile-module .tile__level-label,
+    .tile-module .tile__level-years,
+    .tile-module .tile__thematic,
+    .tile-module .tile__title,
+    .tile-module .tile__topic {
+        color: #fff;
+    }
+    .tile-module:hover .tile__author-name,
+    .tile-module:hover .tile__level-label,
+    .tile-module:hover .tile__level-years,
+    .tile-module:hover .tile__thematic,
+    .tile-module:hover .tile__title,
+    .tile-module:hover .tile__topic {
+        color: #000;
+    }
     .btn--full {
-    color: #cacaca;
-}
+        color: #cacaca;
+    }
+    .tile-module:hover .btn--full {
+        color: #000;
+    }
 
     /* --- Search Bar --- */
     .title--h1alt {
@@ -82,5 +101,16 @@
     }
     .search__input::placeholder {
         color: #6f6f6f;
+    }
+    /*-------------- Article --------------*/
+    .section__content > .title:first-child {
+        color: #fff;
+    }
+    .wysiwyg-content {
+        color: #cacaca;
+    }
+    .bg-color--50,
+    [data-bg-color="50"] {
+        background-color: #0d0d0d;
     }
 }
